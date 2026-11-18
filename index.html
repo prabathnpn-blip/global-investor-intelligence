@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Investor Intelligence</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#0b1220;color:#e8eef8;font-family:Arial,sans-serif}
+header{background:#111d31;padding:20px 16px;border-bottom:1px solid #263650}
+.brand{color:#54dfb0;font-size:21px;font-weight:bold}
+.tagline{font-size:12px;color:#9aabc2;margin-top:6px}
+nav{display:flex;gap:8px;overflow-x:auto;padding:12px;background:#142238}
+nav a{color:#d9e5f5;text-decoration:none;padding:10px 13px;background:#20334e;border-radius:8px;white-space:nowrap;font-size:13px}
+nav a:hover{background:#176c60}
+button{background:#13a985;color:white;border:0;padding:10px 15px;border-radius:8px;font-weight:bold}
+.container{padding:18px;max-width:1100px;margin:auto}
+h2{font-size:21px;color:#62dfb7}
+h3{font-size:16px;margin-top:0}
+.muted{color:#9aabc2;font-size:13px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(145px,1fr));gap:12px}
+.card{background:#17263c;border:1px solid #2b3e58;padding:17px;border-radius:12px;margin-bottom:12px}
+.value{font-size:23px;font-weight:bold;margin:9px 0;color:#fff}
+.green{color:#48d6a4}.red{color:#ff7777}.yellow{color:#f5c76b}
+section{margin:28px 0;scroll-margin-top:15px}
+table{width:100%;border-collapse:collapse;font-size:13px}
+td,th{padding:12px 8px;border-bottom:1px solid #30415a;text-align:left}
+th{color:#91a9c7}
+.tablewrap{overflow-x:auto}
+footer{text-align:center;padding:25px;color:#8395ad;font-size:12px}
+select{background:#20334e;color:white;border:1px solid #45607f;padding:9px;border-radius:7px}
+.topline{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap}
+.notice{background:#392f19;color:#f6d78d;padding:12px;border-radius:8px;font-size:12px;line-height:1.5}
+</style>
+</head>
+<body>
+
+<header>
+ <div class="topline">
+  <div>
+   <div class="brand">GLOBAL INVESTOR INTELLIGENCE</div>
+   <div class="tagline">Turning Global Events into Investment Intelligence</div>
+  </div>
+  <button onclick="toggleLanguage()" id="langBtn">සිංහල</button>
+ </div>
+</header>
+
+<nav>
+ <a href="#overview">Overview</a>
+ <a href="#events">World Events</a>
+ <a href="#markets">Markets</a>
+ <a href="#cse">Sri Lanka CSE</a>
+ <a href="#ai">AI Analysis</a>
+ <a href="#signals">Signals</a>
+ <a href="#performance">Performance</a>
+ <a href="#admin">Admin</a>
+</nav>
+
+<div class="container">
+
+<div class="notice">
+ DEMO VERSION: Figures and market information displayed here are sample placeholders, not live prices or investment recommendations. Live data connections will be added later.
+</div>
+
+<section id="overview">
+ <h2 data-en="Global Market Overview" data-si="ගෝලීය වෙළෙඳපොළ සාරාංශය">Global Market Overview</h2>
+ <p class="muted">Global financial intelligence dashboard</p>
+ <div class="grid">
+  <div class="card"><h3>🌍 Global Markets</h3><div class="value">--</div><div class="muted">Live data pending</div></div>
+  <div class="card"><h3>🇱🇰 Sri Lanka CSE</h3><div class="value">--</div><div class="muted">Live data pending</div></div>
+  <div class="card"><h3>🥇 Gold</h3><div class="value">--</div><div class="muted">Live data pending</div></div>
+  <div class="card"><h3>🛢️ Crude Oil</h3><div class="value">--</div><div class="muted">Live data pending</div></div>
+ </div>
+</section>
+
+<section id="events">
+ <h2 data-en="Global Events Monitoring" data-si="ලෝක සිදුවීම් නිරීක්ෂණය">Global Events Monitoring</h2>
+ <div class="grid">
+  <div class="card"><h3>🌐 Geopolitics</h3><p class="muted">Wars, conflicts and international relations</p></div>
+  <div class="card"><h3>🏦 Central Banks</h3><p class="muted">Interest rates and monetary policy</p></div>
+  <div class="card"><h3>🚢 Trade & Sanctions</h3><p class="muted">Tariffs, sanctions and supply disruptions</p></div>
+  <div class="card"><h3>🏢 Corporate News</h3><p class="muted">Company results and management changes</p></div>
+  <div class="card"><h3>📊 Economic Data</h3><p class="muted">Inflation, GDP and employment</p></div>
+  <div class="card"><h3>💡 Technology</h3><p class="muted">AI, innovation and regulation</p></div>
+ </div>
+</section>
+
+<section id="markets">
+ <h2 data-en="International Markets" data-si="ජාත්‍යන්තර වෙළෙඳපොළ">International Markets</h2>
+ <div class="grid">
+  <div class="card"><h3>🇺🇸 USA</h3><p class="muted">NYSE / NASDAQ</p></div>
+  <div class="card"><h3>🇮🇳 India</h3><p class="muted">NSE / BSE</p></div>
+  <div class="card"><h3>🇯🇵 Japan</h3><p class="muted">Tokyo Stock Exchange</p></div>
+  <div class="card"><h3>🇨🇳 China</h3><p class="muted">Shanghai / Shenzhen</p></div>
+  <div class="card"><h3>🇪🇺 Europe</h3><p class="muted">UK / Germany / France</p></div>
+  <div class="card"><h3>🌏 Other Markets</h3><p class="muted">Middle East / Australia / Canada / Brazil</p></div>
+ </div>
+ <div class="grid">
+  <div class="card"><h3>🥇 Gold & Silver</h3><p class="muted">Precious metals</p></div>
+  <div class="card"><h3>🛢️ Commodities</h3><p class="muted">Oil and other commodities</p></div>
+  <div class="card"><h3>💱 Forex</h3><p class="muted">Global currency markets</p></div>
+  <div class="card"><h3>₿ Crypto</h3><p class="muted">Bitcoin and digital assets</p></div>
+ </div>
+</section>
+
+<section id="cse">
+ <h2>🇱🇰 Sri Lanka – Colombo Stock Exchange</h2>
+ <div class="grid">
+  <div class="card"><h3>ASPI</h3><div class="value">--</div><p class="muted">Live index pending</p></div>
+  <div class="card"><h3>S&P SL20</h3><div class="value">--</div><p class="muted">Live index pending</p></div>
+  <div class="card"><h3>Market Turnover</h3><div class="value">--</div><p class="muted">Live data pending</p></div>
+ </div>
+ <div class="card"><h3>CSE Company Research</h3><p class="muted">Company financials, earnings, valuations, announcements and historical price analysis.</p></div>
+</section>
+
+<section id="ai">
+ <h2>🤖 AI Forecasting & Market Impact Intelligence</h2>
+ <div class="grid">
+  <div class="card"><h3>Historical Intelligence</h3><p class="muted">Compare previous events and market reactions.</p></div>
+  <div class="card"><h3>Event Impact Analysis</h3><p class="muted">Connect global events with companies and assets.</p></div>
+  <div class="card"><h3>Short-term Forecast</h3><p class="muted">1–7 days</p></div>
+  <div class="card"><h3>Medium-term Forecast</h3><p class="muted">2 weeks–3 months</p></div>
+  <div class="card"><h3>Long-term Forecast</h3><p class="muted">6 months and beyond</p></div>
+  <div class="card"><h3>Scenario Analysis</h3><p class="muted">Bull, Base and Bear scenarios with uncertainty.</p></div>
+ </div>
+ <div class="card"><h3>🌍 Global Top 10 Opportunities</h3><p class="muted">Opportunities will be ranked after verified market data and analysis are connected.</p></div>
+</section>
+
+<section id="signals">
+ <h2>📡 Investment Signals</h2>
+ <div class="tablewrap">
+ <table>
+  <tr><th>Asset</th><th>Signal</th><th>Horizon</th><th>Status</th></tr>
+  <tr><td>Sample asset</td><td>NO SIGNAL</td><td>Not set</td><td>Demo</td></tr>
+ </table>
+ </div>
+ <p class="muted">Each published signal will have a unique ID, timestamp, issue price, rationale, sources, risk level, model version and review approval.</p>
+</section>
+
+<section id="performance">
+ <h2>📈 Signal Performance Tracker</h2>
+ <div class="grid">
+  <div class="card"><h3>Total Signals</h3><div class="value">0</div></div>
+  <div class="card"><h3>Win Rate</h3><div class="value">--</div></div>
+  <div class="card"><h3>Average Win / Loss</h3><div class="value">--</div></div>
+  <div class="card"><h3>Maximum Drawdown</h3><div class="value">--</div></div>
+ </div>
+ <p class="muted">Published signals and corrections will be preserved in an auditable history. Losing signals will not be hidden.</p>
+</section>
+
+<section id="admin">
+ <h2>⚙️ Admin Control Panel</h2>
+ <div class="grid">
+  <div class="card"><h3>News & Event Review</h3><p class="muted">Review sources and verify events.</p></div>
+  <div class="card"><h3>Signal Approval</h3><p class="muted">Inspect, edit and approve draft signals.</p></div>
+  <div class="card"><h3>Member Management</h3><p class="muted">Manage accounts and membership.</p></div>
+  <div class="card"><h3>Reports & Facebook</h3><p class="muted">Prepare daily reports and social posts.</p></div>
+  <div class="card"><h3>Payments & Plans</h3><p class="muted">Manage subscriptions and renewals.</p></div>
+  <div class="card"><h3>Data & Audit Logs</h3><p class="muted">Inspect records, settings and activity.</p></div>
+ </div>
+ <div class="notice">Admin security, user permissions and secure backend connections must be implemented before public launch. This screen is currently a visual prototype, not a secured admin system.</div>
+</section>
+
+<footer>
+ GLOBAL INVESTOR INTELLIGENCE PLATFORM<br>
+ Research • Transparency • Risk Awareness<br><br>
+ Demo interface – Not financial advice
+</footer>
+</div>
+
+<script>
+let sinhala=false;
+function toggleLanguage(){
+ sinhala=!sinhala;
+ document.getElementById("langBtn").textContent=sinhala?"English":"සිංහල";
+ document.querySelectorAll("[data-en]").forEach(el=>{
+  el.textContent=sinhala?el.dataset.si:el.dataset.en;
+ });
+}
+</script>
+</body>
+</html>
